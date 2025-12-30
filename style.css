@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  margin: 0;
+}
+
+.app {
+  background: white;
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.week-info {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.progress-section {
+  margin-bottom: 24px;
+}
+
+.progress-text {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  background: #ddd;
+  height: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #4caf50;
+  transition: width 0.3s ease;
+}
+
+.tasks-section h2 {
+  margin-bottom: 12px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.task-list input {
+  transform: scale(1.2);
+}
+
+.points {
+  font-size: 12px;
+  color: #888;
+  white-space: nowrap;
+}
+
+.add-task-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-task-btn:active {
+  transform: scale(0.98);
+}
+
+.status {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* ===== MODAL ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: none; /* hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-overlay.show {
+  display: flex; /* show modal when .show is added */
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 360px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.modal h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.modal label {
+  display: block;
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.modal-buttons button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-task-confirm-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.add-task-cancel-btn {
+  background: #e53935;
+  color: white;
+}
