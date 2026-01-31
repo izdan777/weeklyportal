@@ -202,3 +202,45 @@ footer {
     max-width: 360px;
   }
 }
+
+/* ---------- MOBILE MENU ---------- */
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-direction: column;
+    display: none;
+    background: #0f3d3e;
+    padding-top: 10px;
+  }
+
+  .nav-links a {
+    padding: 12px 0;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-contact {
+    width: 100%;
+    justify-content: center;
+    padding-top: 10px;
+  }
+}
