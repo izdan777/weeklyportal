@@ -12,41 +12,51 @@ body {
 }
 
 /* ---------- NAVBAR ---------- */
+
 .navbar {
   background: #0f3d3e;
-  padding: 16px 30px;
+  padding: 16px 20px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
 }
 
 .logo {
-  color: #ffffff;
+  color: white;
   font-size: 1.4rem;
   font-weight: bold;
 }
 
+/* menu button */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* desktop nav */
 .nav-links {
   display: flex;
   gap: 22px;
-  flex-wrap: wrap;
 }
 
 .nav-links a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   font-size: 0.95rem;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover {
   color: #2fb7a1;
 }
 
 .nav-contact {
   display: flex;
-  gap: 14px;
+  gap: 12px;
   align-items: center;
 }
 
@@ -62,6 +72,7 @@ body {
   border-radius: 20px;
   font-weight: 600;
 }
+
 
 /* ---------- HERO ---------- */
 .hero {
@@ -203,18 +214,8 @@ footer {
   }
 }
 
-/* ---------- MOBILE MENU ---------- */
+/* ---------- MOBILE NAV ---------- */
 
-.menu-toggle {
-  display: none;
-  font-size: 26px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-/* Mobile layout */
 @media (max-width: 768px) {
 
   .menu-toggle {
@@ -222,15 +223,18 @@ footer {
   }
 
   .nav-links {
-    width: 100%;
-    flex-direction: column;
     display: none;
+    flex-direction: column;
     background: #0f3d3e;
-    padding-top: 10px;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
   }
 
   .nav-links a {
-    padding: 12px 0;
+    padding: 12px 20px;
     border-top: 1px solid rgba(255,255,255,0.15);
   }
 
@@ -239,8 +243,6 @@ footer {
   }
 
   .nav-contact {
-    width: 100%;
-    justify-content: center;
-    padding-top: 10px;
+    display: none;
   }
 }
