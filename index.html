@@ -1,66 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Weekly Goals</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISSE Supplies | Resort Linen & Textile Supplies</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <div class="app">
+<nav class="navbar">
+  <div class="logo">ISSE Supplies</div>
 
-    <h1>👧 My Weekly Goals</h1>
+  <div class="nav-links">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="why-us.html">Why Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-    <div class="week-info">
-      <p class="week-text"></p>
-    </div>
+  <div class="nav-contact">
+    <a href="mailto:info@issesupplies.com">info@issesupplies.com</a>
+    <a class="btn" href="https://wa.me/960XXXXXXXX" target="_blank">WhatsApp</a>
+  </div>
+</nav>
 
-    <!-- Progress Section -->
-    <div class="progress-section">
-      <div class="progress-text">0% Completed</div>
-      <div class="progress-bar">
-        <div class="progress-fill"></div>
+<section class="hero">
+  <div>
+    <h1>Premium Resort Linen & Textile Supplies</h1>
+    <p>Professional supplier of towels, linens, cloths and housekeeping textiles for resorts.</p>
+    <button onclick="goToProducts()">View Products</button>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Core Supply Categories</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://picsum.photos/400/300?towel">
+      <div>
+        <h3>Resort Towels</h3>
+        <p>Bath, beach and pool towels in premium grades.</p>
       </div>
     </div>
 
-    <!-- Tasks Section -->
-    <div class="tasks-section">
-      <h2>Tasks</h2>
-
-      <ul class="task-list">
-        <!-- Tasks rendered by JavaScript -->
-      </ul>
-
-      <button class="add-task-btn">+ Add Task</button>
-    </div>
-
-    <!-- Status -->
-    <div class="status">
-      ❌ Not Achieved (Need 80%)
-    </div>
-
-  </div>
-
-  <!-- Add Task Modal -->
-  <div class="modal-overlay hidden">
-    <div class="modal">
-      <h3>Add New Task</h3>
-      <label>
-        Task Name
-        <input type="text" class="task-title-input" placeholder="Enter task..." />
-      </label>
-      <label>
-        Points
-        <input type="number" class="task-points-input" min="1" value="5" />
-      </label>
-      <div class="modal-buttons">
-        <button class="add-task-confirm-btn">Add Task</button>
-        <button class="add-task-cancel-btn">Cancel</button>
+    <div class="card">
+      <img src="https://picsum.photos/400/300?linen">
+      <div>
+        <h3>Bed & Bath Linen</h3>
+        <p>Sheets, pillow covers and bath linen sets.</p>
       </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <div class="card">
+      <img src="https://picsum.photos/400/300?cloth">
+      <div>
+        <h3>Housekeeping Cloths</h3>
+        <p>Microfiber and utility cloth solutions.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+© 2026 ISSE Supplies. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
